@@ -1,0 +1,22 @@
+name: whats_in_my_fridge_app
+description: A new Flutter project.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.15.1 <3.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.5
+  firebase_auth: ^3.3.8
+  firebase_core: ^1.13.0
+  cloud_firestore: ^3.1.9
+  uuid: ^3.0.7
+
+dev_dependencies:
+  flutter_lints: ^1.0.0
+
+flutter:
+  uses-material-design: true
