@@ -7,10 +7,10 @@ final CollectionReference _collectionStore = _firestore.collection('fridge');
 
 class FirebaseCrudFridge {
   // CREATE
-  static Future<AppResponse> addFood({
+  static Future<Response> addFood({
     required String food,
   }) async {
-    AppResponse response = AppResponse();
+    Response response = Response();
     DocumentReference documentReferencer = _collectionStore.doc();
 
     Map<String, dynamic> data = <String, dynamic>{
@@ -37,11 +37,11 @@ class FirebaseCrudFridge {
 
   // UPDATE
 
-  static Future<AppResponse> updateFood({
+  static Future<Response> updateFood({
     required String food,
     required String docId,
   }) async {
-    AppResponse response = AppResponse();
+    Response response = Response();
     DocumentReference documentReferencer = _collectionStore.doc(docId);
 
     Map<String, dynamic> data = <String, dynamic>{"food": food};
@@ -58,10 +58,10 @@ class FirebaseCrudFridge {
   }
 
   // DELETE
-  static Future<AppResponse> deleteFood({
+  static Future<Response> deleteFood({
     required String docId,
   }) async {
-    AppResponse response = AppResponse();
+    Response response = Response();
     DocumentReference documentReferencer = _collectionStore.doc(docId);
 
     await documentReferencer.delete().whenComplete(() {

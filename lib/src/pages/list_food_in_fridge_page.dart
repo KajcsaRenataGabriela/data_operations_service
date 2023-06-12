@@ -1,10 +1,11 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:login/main.dart';
+import 'package:login/src/services/authentication_service.dart';
 import '../services/firebase_crud_fridge.dart';
 import '../models/fridge.dart';
 import 'add_food_in_fridge_page.dart';
 import 'edit_fridge_page.dart';
-import '';
 
 class ListFoodInFridgePage extends StatefulWidget {
   const ListFoodInFridgePage({Key? key}) : super(key: key);

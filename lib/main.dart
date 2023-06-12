@@ -1,6 +1,6 @@
+import 'package:data_operations_service/src/pages/list_food_in_fridge_page.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:whats_in_my_fridge_app/src/pages/list_food_in_fridge_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
