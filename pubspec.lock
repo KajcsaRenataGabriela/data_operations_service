@@ -17,6 +17,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.35.4"
+  aqueduct:
+    dependency: transitive
+    description:
+      name: aqueduct
+      sha256: "21b57d0cdc8ac4eaeff3527b122e03f2eda0203510d2abacde5c4a7f648a6c0d"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.3.0+1"
   args:
     dependency: transitive
     description:
